@@ -9,7 +9,7 @@ def display_menu(pizzas, extras):
         print(f"{extra}: ${price:.2f}")
 
 
-# Test data for pizzas and optional extras
+# List of Pizzas and optional extras
 pizza_menu = {
     "Margherita": 8.99,
     "Pepperoni": 10.99,
