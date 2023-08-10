@@ -10,7 +10,7 @@ def calculate_delivery_fee(order_total, delivery_fee=3.00):
 
 # Test the calculate_delivery_fee() function
 total_cost = 25.99  # Replace this with the actual total cost calculated from the selected pizzas and extras
-delivery_option = True  # Replace this with the actual delivery option (True for delivery, False for pickup)
+delivery_option = False  # Replace this with the actual delivery option (True for delivery, False for pickup)
 
 if delivery_option:
     total_cost_with_delivery = calculate_delivery_fee(total_cost)
