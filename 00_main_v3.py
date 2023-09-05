@@ -1,4 +1,3 @@
-import time
 # Constant to set the maximum number of toppings allowed per pizza
 MAX_TOPPINGS_PER_PIZZA = 5
 MAX_TOTAL_PIZZAS = 5
@@ -130,9 +129,9 @@ def select_pizzas(menu, extras, max_pizzas=MAX_TOTAL_PIZZAS):
                     if 0 < quantity <= (max_pizzas - total_pizzas):
                         break
                     else:
-                        print("##################################################")
-                        print(f"Please enter a valid quantity between 1 and {max_pizzas - total_pizzas}.")
-                        print("##################################################")
+                        print("##########################################################")
+                        print(f"Sorry, there are only {max_pizzas - total_pizzas} pizza(s) available for this order.")
+                        print("##########################################################")
                 except ValueError:
                     print("#####################################################")
                     print(f"Invalid input. Please enter a number between 1 and {max_pizzas - total_pizzas}.")
@@ -309,5 +308,5 @@ while True:
     # Ask if the user wants to place another order
     another_order = input("Do you want to place another order? (Y/N): ").lower()
     if another_order != 'y':
-        print("Thank you for using our pizza ordering system. Goodbye!")
+        print("Thank you for using our pizza ordering system! Goodbye!")
         break
